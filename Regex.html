@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regex</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Enter your email");
+        let userInput = /^\w+\@\w{1,5}\.\w{1,3}$/;
+        let result = userInput.test(str);
+        console.log(result);
+        if (result) {
+            alert("valid email *****");
+        } else {
+           alert("invalid");
+        }
+
+    </script>
+</body>
+</html>
